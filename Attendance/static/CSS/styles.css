@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(95, 104, 14) (202, 212, 113) (229, 255, 0);
+}
+
+.container {
+	position: relative;
+	
+	background-color: blue;
+	height: 700px;
+	border-radius: 20%;
+	max-width: 720px;
+	margin: 40px 50px;
+	input {
+		padding: 10px;
+		width: 100%;
+	}
+}

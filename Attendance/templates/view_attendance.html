@@ -1,0 +1,96 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="https://dti.hamplustech.com/images/DTI.png" />
+		<title> COMPUTER SCIENCE EDUCATION ATTENDANCE </title>
+		<style>
+			/* Import Google font - Poppins */
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Poppins", sans-serif;
+			}
+			a {
+				position: fixed;
+				inset: 0;
+				padding: 10px;
+				color: white;
+				font-weight: bold;
+				width: max-content;
+				height: max-content;
+			}
+			section {
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				padding: 50px;
+				background-image: linear-gradient(
+					45deg,
+					rgba(30, 170, 226, 0.795),
+					rgb(0, 30, 130)
+				);
+			}
+			.styled-table {
+				width: max-content;
+				border-collapse: collapse;
+				font-size: 16px;
+				margin: 20px 0;
+			}
+
+			.styled-table thead {
+				background-color: whitesmoke;
+				color: black;
+				text-align: left;
+			}
+
+			.styled-table thead th {
+				padding: 12px;
+				border: 1px solid #ddd;
+			}
+
+			.styled-table tbody tr {
+				border: 1px solid #ddd;
+				background-color: white;
+			}
+			.styled-table tbody td {
+				padding: 12px;
+				border: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<a href="/">back to attendance form</a>
+			<h1>View DTI 2.0 Attendants</h1>
+			<div class="" style="width: 500px; overflow-x: scroll">
+				<table class="styled-table">
+					<thead class="">
+						<tr>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Matric Number</th>
+							<th>Contact</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						{% for attendant in Attendance %}
+						<tr>
+							<td>{{attendant.id}}</td>
+							<td>{{attendant.name}}</td>
+							<td>{{attendant.Matric_No}}</td>
+							<td>{{attendant.contact}}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</body>
+</html>
