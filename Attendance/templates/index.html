@@ -8,26 +8,21 @@
 		<link rel="preload" href="/duplicate">
 		<script src="https://cdn.tailwindcss.com"></script>
 	</head>
-	<header>
-		<!-- <nav class="bg-blue-500 p-4">
-			<div class="container mx-auto flex justify-between items-center">
-				<h1 class="text-white font-bold">Attendance</h1>
-				<ul class="flex">
-					<li class="mr-6">
-						<a href="/" class="text-white
-							hover:text-blue-200">Home</a>
-					</li>
-					<li>
-						<a href="/view_attendance" class="text-white
-							hover:text-blue-200">View Attendance</a>
-					</li>
-				</ul>
-			</div>
-		</nav> -->
-
-	</header>
-	<body class="bg-gray-100 flex justify-center items-center h-screen">
-		<div class="bg-white shadow-md rounded-lg p-6 w-96">
+	<body class="bg-gray-100 justify-center h-screen">
+		<header>
+			<nav class="bg-blue-500 p-4">
+				<div class="container mx-auto flex flex-col justify-center items-center md:flex-row md:justify-between">
+					<img src="https://myschoolportal.net/blog/wp-content/uploads/2024/10/delta-state-university-abraka-logo-transparent-1.png" alt="" class="w-16 md:w-40" />
+					<div class="text-center mt-4 md:mt-0 md:text-center">
+						<h1 class="text-white font-bold text-sm md:text-lg">DELTA STATE UNIVERSITY, ABRAKA</h1>
+						<h2 class="text-white font-bold text-sm md:text-lg">DEPARTMENT OF COMPUTER SCIENCE EDUCATION</h2>
+						<h3 class="text-white font-bold text-sm md:text-lg">FACULTY OF EDUCATION</h3>
+					</div>
+				</div>
+			</nav>
+		</header>
+			<div class="items-center flex ">
+		<div class="bg-white shadow-md rounded-lg p-6 w-96 items-center">
 			<h1 class="text-2xl font-bold text-center mb-6">Attendance</h1>
 			<form action="save_attendance" method="POST">
 				<!-- CSRF TOKEN -->
@@ -83,6 +78,6 @@
 			</form>
 
 			<div class="text-black"> <a href="/view_attendance">  View Attendance</a>  </div>
-		</div>
+		</div></div>
 	</body>
 </html>

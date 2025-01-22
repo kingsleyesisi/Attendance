@@ -34,4 +34,5 @@ def duplicate(request):
     return render(request, 'duplicate.html')
 
 def success(request):
+    # The view for successful entery
     return render(request, 'success.html')
