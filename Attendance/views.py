@@ -20,7 +20,7 @@ def save_attendance(request):
                                          Matric_No=Matric_No, 
                                          contact=contact)
         data.save()
-    return redirect('/')
+    return redirect('/success')
 
 def view_attendance(request):
     attendance = Attendance.objects.all()
@@ -32,3 +32,6 @@ def view_attendance(request):
 def duplicate(request):
     # The view for duplicate entery
     return render(request, 'duplicate.html')
+
+def success(request):
+    return render(request, 'success.html')
