@@ -3,7 +3,7 @@ from django.contrib import messages
 from .models import Attendance
 
 def index(request):
-    # Views goes in here
+    # Home Page
     return render(request, 'index.html')
 
 def save_attendance(request):
