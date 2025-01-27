@@ -29,6 +29,13 @@ def view_attendance(request):
     return render(request, 'view_attendance.html', data)
 
 
+def login(request):
+    # The view for login
+    return render(request, 'login.html')
+
+
+
+
 def duplicate(request):
     # The view for duplicate entery
     return render(request, 'duplicate.html')
